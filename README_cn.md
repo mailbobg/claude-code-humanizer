@@ -1,8 +1,13 @@
 [English](README_en.md)
 
-# Plain — 让 Claude Code 说人话的 output style
+# Claude Code Humanizer — 让 Claude Code 说人话的 output style
 
-让 Claude Code 直接回答问题:像一个在白板前跟你聊技术的资深工程师,而不是一份学术论文、一篇教程、或者一份咨询报告。砍掉所有"很好的问题!""让我来..."这类开场,砍掉 bullet 满天飞的排版,砍掉文末那句"如需进一步说明请告诉我"。Claude Code 原本的写代码能力——读写文件、调用工具、跑测试、整个 agent loop——完全保留。只改它说话的方式。
+它让 Claude Code 像真实的人一样交流：直接、简单、容易理解。
+没有学术化开场、没有晦涩的工程术语、没有大量 bullet 堆砌，也没有 “如果需要我可以继续展开” 这种机械式结尾。
+
+它完整保留 Claude Code 原有的编码与 Agent 能力，包括工具调用、文件修改、测试、规划以及整个 Agent 循环。
+
+它唯一改变的，只有 Claude 的说话方式。
 
 本质就是一个 markdown 文件,放进 `~/.claude/output-styles/`。在会话开始时改写 Claude Code 的 system prompt,规则一次性烘焙进去,后续每轮都生效,不重复消耗 input token。
 
