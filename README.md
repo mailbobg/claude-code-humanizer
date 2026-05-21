@@ -1,8 +1,14 @@
 [中文](README_cn.md)
 
-# Plain — A Claude Code output style for plain communication
+# Claude Code Humanizer
 
-Makes Claude Code answer directly: senior-engineer-at-a-whiteboard voice, no academic preamble, no bullet-spam, no "Let me know if you'd like me to elaborate". Keeps every bit of Claude Code's coding behavior — file edits, tool use, tests, the whole agentic loop. Only changes how it writes.
+A plain-language communication layer for Claude Code.
+
+It makes Claude Code answer like a real person: direct, simple, and easy to follow. No academic preamble, no dense engineering language, no bullet spam, and no robotic closing lines like “Let me know if you'd like me to elaborate.”
+
+It keeps Claude Code’s full coding behavior intact — tool use, file edits, tests, planning, and the whole agent loop.
+
+It only changes how Claude talks.
 
 This is a single markdown file dropped into `~/.claude/output-styles/`. It rewrites Claude Code's system prompt at session start, so the rules are baked in for every turn without paying input tokens per message.
 
